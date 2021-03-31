@@ -6,6 +6,7 @@ import { Home } from "./pages/Home";
 import { SearchResults } from "./pages/SearchResults";
 import "./styles/App.css";
 
+
 function App() {
 	return (
 		<div className="main-container">

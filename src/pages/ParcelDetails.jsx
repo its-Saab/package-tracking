@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Image, Modal, Button, Header } from "semantic-ui-react";
+import { FetchMap } from "../actions/FetchMap";
 
 export const ParcelDetails = ({ item }) => {
 	const [open, setOpen] = useState(false);
-
+	console.log(item);
 	return (
 		<Modal
 			onClose={() => setOpen(false)}
@@ -17,10 +18,9 @@ export const ParcelDetails = ({ item }) => {
 		>
 			<Modal.Header>Parcel Details</Modal.Header>
 			<Modal.Content image>
-				<Image
-					size="medium"
-					src="https://react.semantic-ui.com/images/avatar/large/rachel.png"
-					wrapped
+				<FetchMap
+					latitude={item.location_coordinate_latitude}
+					longitude={item.location_coordinate_longitude}
 				/>
 				<Modal.Description>
 					<Header>{item.parcel_id}</Header>
