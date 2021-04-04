@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Image, Modal, Button, Header } from "semantic-ui-react";
+import { Modal, Button, Header } from "semantic-ui-react";
 import { FetchMap } from "../actions/FetchMap";
 
 export const ParcelDetails = ({ item }) => {
@@ -23,7 +23,7 @@ export const ParcelDetails = ({ item }) => {
 					longitude={item.location_coordinate_longitude}
 				/>
 				<Modal.Description>
-					<Header>{item.parcel_id}</Header>
+					<Header>#{item.parcel_id}</Header>
 					<p>From: {item.sender}</p>
 					<p>To: {item.user_name}</p>
 					<p>Pick-up location: {item.location_name}</p>

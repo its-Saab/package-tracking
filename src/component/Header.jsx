@@ -5,7 +5,7 @@ export const Header = () => {
 	return (
 		<div>
 			<a href="/">
-				<Image src={logo} size={"medium"} centered={true} ui={true} />
+				<Image src={logo} size={"small"} centered={true} ui={true} />
 			</a>
 			<hr />
 		</div>

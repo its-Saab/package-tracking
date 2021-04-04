@@ -5,7 +5,7 @@ import { ParcelDetails } from "./ParcelDetails";
 
 export const ResultCards = ({ item }) => {
 	return (
-		<div>
+		<div style = {{backgroundColor: "rgba(133, 149, 150, 0.5)"}}>
 			<Grid container columns={1} textAlign="left">
 				<Grid.Column style={{ maxWidth: 450 }}>
 					<Item.Group>

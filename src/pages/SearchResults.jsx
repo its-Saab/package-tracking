@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { ResultCards } from "./ResultCards";
+import { ResultCards } from "../component/ResultCards";
 
 export const SearchResults = ({ match }) => {
 	const info = match.params.query;
