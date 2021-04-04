@@ -28,5 +28,7 @@
       "ready-for-pickup": "ready for pickup"
     },
     "lastUpdated": "Last Updated"
-  }
+  },
+  "button-sv" : "Växla",
+  "button-en" : "Switch"
 }
