@@ -2,7 +2,8 @@
   "home": {
     "senderName": "Avsändarens Namn",
     "parcelID": "Paket ID",
-    "find": "Hitta"
+    "find": "Hitta",
+    "message": "Spåra ditt paket"
   },
   "resultCards": {
     "parcelID": "Paket ID",

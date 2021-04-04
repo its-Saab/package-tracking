@@ -25,10 +25,14 @@ export const Home = () => {
 		setQuery({ ...query, [target.name]: target.value });
 	};
 	return (
+		<div style={{opacity:"0.85"}}>
+
+
 		<Grid textAlign="center" style={{ height: "100vh" }} verticalAlign="middle">
 			<Grid.Column style={{ maxWidth: 450 }}>
 				<Form size="large" onSubmit={handleSubmit}>
 					<Segment stacked>
+						{t('home.message')}
 						<Form.Input
 							fluid
 							icon="user"
@@ -54,5 +58,6 @@ export const Home = () => {
 				</Form>
 			</Grid.Column>
 		</Grid>
+		</div>
 	);
 };

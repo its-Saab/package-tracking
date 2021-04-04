@@ -2,7 +2,8 @@
   "home": {
     "senderName": "Sender's Name",
     "parcelID": "Parcel's ID",
-    "find": "Find"
+    "find": "Find",
+    "message": "Track your parcel"
   },
   "resultCards": {
     "parcelID": "Parcel's ID",
