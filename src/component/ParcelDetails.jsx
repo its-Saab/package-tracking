@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Modal, Button, Header } from "semantic-ui-react";
 import { FetchMap } from "../actions/FetchMap";
+import { useTranslation } from "react-i18next";
 
 export const ParcelDetails = ({ item }) => {
 	const [open, setOpen] = useState(false);
-	console.log(item);
+	const { t } = useTranslation("common");
 	return (
 		<Modal
 			onClose={() => setOpen(false)}
@@ -12,11 +13,11 @@ export const ParcelDetails = ({ item }) => {
 			open={open}
 			trigger={
 				<Button size="small" color="black">
-					Show Details
+					{t("resultCards.showDetails")}
 				</Button>
 			}
 		>
-			<Modal.Header>Parcel Details</Modal.Header>
+			<Modal.Header>{t("parcelDetails.title")}</Modal.Header>
 			<Modal.Content image>
 				<FetchMap
 					latitude={item.location_coordinate_latitude}
@@ -24,12 +25,22 @@ export const ParcelDetails = ({ item }) => {
 				/>
 				<Modal.Description>
 					<Header>#{item.parcel_id}</Header>
-					<p>From: {item.sender}</p>
-					<p>To: {item.user_name}</p>
-					<p>Pick-up location: {item.location_name}</p>
-					<p>ETA: {item.eta}</p>
-					<p>Status: {item.status}</p>
-					<p>Last updated: {item.last_updated}</p>
+					<p>
+						{t("parcelDetails.from")}: {item.sender}
+					</p>
+					<p>
+						{t("parcelDetails.to")}: {item.user_name}
+					</p>
+					<p>
+						{t("parcelDetails.pickupLocation")}: {item.location_name}
+					</p>
+					<p>
+						{t("parcelDetails.eta")}: {item.eta}
+					</p>
+					<p>Status: {t(`resultCards.status.${item.status}`)}</p>
+					<p>
+						{t("parcelDetails.lastUpdated")}: {item.last_updated}
+					</p>
 				</Modal.Description>
 			</Modal.Content>
 			<Modal.Actions>

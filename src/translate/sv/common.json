@@ -1,0 +1,32 @@
+{
+  "home": {
+    "senderName": "Avsändarens Namn",
+    "parcelID": "Paket ID",
+    "find": "Hitta"
+  },
+  "resultCards": {
+    "parcelID": "Paket ID",
+    "status": {
+      "order-info-received": "Orderinfo mottagen",
+      "delivered": "levererades",
+      "on-the-way": "På väg",
+      "ready-for-pickup": "redo för upphämtning"
+    },
+    "from": "Från",
+    "showDetails" : "Visa detaljer"
+  },
+  "parcelDetails": {
+    "title": "Paketdetaljer",
+    "from": "Från",
+    "to": "Till",
+    "pickupLocation": "Upphämtningsplats",
+    "eta": "Beräknad ankomsttid",
+    "status": {
+      "order-info-received": "Orderinfo mottagen",
+      "delivered": "levererades",
+      "on-the-way": "På väg",
+      "ready-for-pickup": "redo för upphämtning"
+    },
+    "lastUpdated": "Senast uppdaterad"
+  }
+}

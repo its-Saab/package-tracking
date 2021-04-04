@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form, Grid, Segment } from "semantic-ui-react";
 import { useHistory } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const Home = () => {
 	//State
@@ -8,6 +9,8 @@ export const Home = () => {
 		senderName: "",
 		parcelID: "",
 	});
+
+	const { t } = useTranslation("common");
 
 	//Property
 	const history = useHistory();
@@ -30,7 +33,7 @@ export const Home = () => {
 							fluid
 							icon="user"
 							iconPosition="left"
-							placeholder="Sender's name"
+							placeholder={t("home.senderName")}
 							name="senderName"
 							value={query.senderName}
 							onChange={handleChange}
@@ -39,13 +42,13 @@ export const Home = () => {
 							fluid
 							icon="box"
 							iconPosition="left"
-							placeholder="Parcel's ID"
+							placeholder={t("home.parcelID")}
 							name="parcelID"
 							value={query.parcelID}
 							onChange={handleChange}
 						/>
 						<Button color="teal" fluid size="large">
-							Find
+							{t("home.find")}
 						</Button>
 					</Segment>
 				</Form>

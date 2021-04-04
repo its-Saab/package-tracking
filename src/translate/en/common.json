@@ -1,0 +1,32 @@
+{
+  "home": {
+    "senderName": "Sender's Name",
+    "parcelID": "Parcel's ID",
+    "find": "Find"
+  },
+  "resultCards": {
+    "parcelID": "Parcel's ID",
+    "status": {
+      "order-info-received": "Order info received",
+      "delivered": "delivered",
+      "on-the-way": "On the way",
+      "ready-for-pickup": "ready for pickup"
+    },
+    "from": "From",
+    "showDetails" : "Show Details"
+  },
+  "parcelDetails": {
+    "title": "Parcel Details",
+    "from": "From",
+    "to": "To",
+    "pickupLocation": "Pick-up Location",
+    "eta": "ETA",
+    "status": {
+      "order-info-received": "Order info received",
+      "delivered": "delivered",
+      "on-the-way": "On the way",
+      "ready-for-pickup": "ready for pickup"
+    },
+    "lastUpdated": "Last Updated"
+  }
+}
