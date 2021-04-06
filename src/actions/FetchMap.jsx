@@ -1,5 +1,4 @@
 import { Image } from "semantic-ui-react";
-import { Marker } from "mapbox-gl";
 export const FetchMap = ({ latitude, longitude }) => {
 	const ACCESS_TOKEN = process.env.REACT_APP_ACCESS_TOKEN;
 	return (
