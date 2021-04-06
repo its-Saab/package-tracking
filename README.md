@@ -4,7 +4,7 @@
 
 ## Features
 
-- Search using parcel-ID and sender's name.
+- Search using parcel-ID or sender's name.
 - Fetch package data from RESTful API.
 - Display package details including location on map.
 - Supports Swedish-English languages.
