@@ -9,7 +9,7 @@ export const SearchResults = ({ match, item }) => {
 	console.log("parcelID", parcelID);
 
 	const filteredList = item.filter(
-		(item) => (item.parcel_id == parcelID) | (item.sender == sendersName)
+		(item) => (item.parcel_id.startsWith(parcelID)) | (item.sender.includes(sendersName))
 	);
 	return (
 		<div>
