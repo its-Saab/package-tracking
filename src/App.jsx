@@ -26,7 +26,7 @@ function App() {
 				<Router>
 					<Header />
 					<Switch>
-						<Route render={() => <Home item={data} />} path="/" exact />
+						<Route render={() => <Home item={data} flag={flag} />} path="/" exact />
 						<Route
 							component={(props) => (
 								<SearchResults match={props.match} item={data} />
