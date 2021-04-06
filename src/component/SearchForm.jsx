@@ -44,6 +44,8 @@ export const SearchForm = () => {
 								value={query.senderName}
 								onChange={handleChange}
 							/>
+							<p>--{t("home.or")}--</p>
+							<br/>
 							<Form.Input
 								fluid
 								icon="box"

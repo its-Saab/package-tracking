@@ -3,7 +3,8 @@
     "senderName": "Sender's Name",
     "parcelID": "Parcel's ID",
     "find": "Find",
-    "message": "Track your parcel"
+    "message": "Track your parcel",
+    "or": "OR"
   },
   "resultCards": {
     "parcelID": "Parcel's ID",

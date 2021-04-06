@@ -3,7 +3,8 @@
     "senderName": "Avsändarens Namn",
     "parcelID": "Paket ID",
     "find": "Spåra",
-    "message": "Spåra ditt paket"
+    "message": "Spåra ditt paket",
+    "or": "Eller"
   },
   "resultCards": {
     "parcelID": "Paket ID",
